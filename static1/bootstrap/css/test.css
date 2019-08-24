@@ -1,0 +1,26 @@
+body {
+  height: 800px;
+  width: 100%;
+  margin: 0; }
+
+.caidan {
+  width: 200px;
+  height: 100%;
+  border: 1px solid #000000;
+  float: left; }
+  .caidan .caidan-ul {
+    list-style: none;
+    padding: 0; }
+    .caidan .caidan-ul .caidan-item {
+      height: 50px; }
+    .caidan .caidan-ul .active {
+      background-color: red; }
+
+.caidan-a {
+  padding-left: 40px; }
+
+.main-content {
+  overflow: hidden;
+  height: 100%;
+  display: inline-block;
+  margin-left: 202px; }

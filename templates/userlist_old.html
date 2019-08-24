@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户列表</title>
+</head>
+<body>
+<a href="/adduser/"> 添加用户 </a>
+<table border="1">
+    <thead>
+    <tr>
+        <th>id</th>
+        <th>用户名</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for user in userlist %}
+        <tr>
+            <td>{{ user.id }}</td>
+            <td>{{ user.name }}</td>
+        <td>
+            <a href="/deluser/?id={{ user.id }}">删除</a>
+            <a href="/edituser/?id={{ user.id }}">编辑</a>
+        </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>
