@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel='stylesheet' href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/jquery-ui.min.css">
+		<link rel="stylesheet" href="css/lzr.css">
+		<script src='js/lzr.js'></script>
+		<title>modal</title>
+
+	</head>
+	<body>
+		<div class="container">
+			<div><button class='btn btn-success' data-toggle='modal' data-target='#myModal'>打开模态窗口</button></div>
+
+		</div>
+		<!-- 模态窗口 -->
+		<div class="modal fade bs-example-modal-lg" id='myModal' data-backdrop='static'>
+			<div class="modal-dialog " style="width:50%;height:50%;">
+				<div class="modal-content">
+					<div class="modal-header">
+						<!-- <h5 class="modal-title">标题！</h5> -->
+						<button class='close' data-dismiss='modal'>&times;</button>
+					</div>
+					<div class="modal-body">
+						<!-- <p>这是模态窗口</p> -->
+						<div class='row'>
+							<!-- <div class='col-md-2'></div> -->
+							<div class="col-xl-offset-1 col-xl-10">
+								<div class="widget">
+
+
+									<div class="widget-body">
+										<form class="form-horizontal no-margin">
+
+											<div class='row rowstyle'>
+												<div class="col-md-3">
+													<div class="input-group inputstyle1">
+														<div class='input-group-addon'>进仓日期:</div>
+														<input type="text" class="form-control" id="yl_date">
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div class="input-group inputstyle1">
+														<div class="input-group-addon">物料名称:</div>
+														<input type="text" class="form-control" id="yl_name">
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div class="input-group inputstyle1">
+														<div class='input-group-addon'>批号:</div>
+														<input type="text" class="form-control" id="yl_ph">
+													</div>
+												</div>
+												<div class="col-md-3">
+													<div class="input-group inputstyle1">
+														<div class='input-group-addon'>粒数:</div>
+														<input type="text" class="form-control" id="yl_ls">
+														<div class='input-group-addon'>粒</div>
+													</div>
+												</div>
+											</div>
+											<div class='row rowstyle'>
+												<div class="col-md-3 ">
+													<div class="input-group inputstyle1">
+														<div class="input-group-addon">净重:</div>
+														<input type="text" class="form-control" id="yl_jz">
+														<div class='input-group-addon'>kg</div>
+													</div>
+												</div>
+												<div class="col-md-3 ">
+													<div class="input-group inputstyle1">
+														<div class='input-group-addon'>供货商:</div>
+														<input type="text" class="form-control" id="yl_ghs">
+													</div>
+												</div>
+												<div class="col-md-3 ">
+													<div class="input-group inputstyle1">
+														<div class="input-group-addon">收料仓:</div>
+														<input type="text" class="form-control" id="yl_slc">
+													</div>
+												</div>
+											</div>
+
+									</div>
+
+									</form>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="modal-footer">
+						<button class='btn btn-secondary' data-dismiss='modal'>取消</button>
+						<button class='btn btn-primary'>确定</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<script src='js/jquery-3.4.1.min.js'></script>
+		<script src='js/bootstrap.min.js'></script>
+		<script src='js/jquery-ui.min.js'></script>
+		<script>
+			$(function(){
+				$("#myModal").draggable();
+			});
+		</script>
+	</body>
+</html>

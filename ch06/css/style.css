@@ -1,0 +1,74 @@
+/* 导航菜单 */
+ul{
+	list-style: none;
+	padding: 0;
+}
+#nav li,#nav li a{
+	display: inline-block;
+	padding: 7px 15px;
+	text-decoration: none;
+	color: #3B3B3B;
+}
+
+#nav li a:hover{
+	background: #eee;
+}
+
+#nav{
+	background: none;
+}
+
+#nav .active{
+	background: #eee;
+}
+
+.toggle-btn {
+display: none;
+}
+
+@media (max-width:767px){
+	.toggle-btn{
+		display:inline-block;
+		text-decoration: none;
+		background: #000;
+		color:#fff;
+		padding: 7px 10px;
+		position:absolute;
+		right:10px;
+		top:50px;		
+		}
+		#nav .close{
+			display:none;
+		}
+		#nav:target .close{
+			display:inline-block;
+		}
+		
+		
+		#nav{
+			display:none;
+		}
+		#nav:target{
+			display:block;
+			position: absolute;
+			top:0;
+			padding-top:70px;
+			width:100%;
+		}
+		#nav:target ul{
+			background: #000;
+		
+		}
+		#nav:target li,#nav:target li a{
+			display:block;
+			color:#eee;
+			text-align: left;
+		}
+		#nav:target li a:hover{
+			background: #3B3B3B;
+		}
+			
+		#nav:target .active{
+		background: #272727;
+		}
+}
